@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:flashchat/components/rounded_button.dart';
-
 import '../constants.dart';
 
 class LoginScreen extends StatefulWidget {

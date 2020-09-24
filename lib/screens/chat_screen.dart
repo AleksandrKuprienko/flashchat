@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:flashchat/constants.dart';
 
 class ChatScreen extends StatefulWidget {
