@@ -1,13 +1,11 @@
 import 'package:flashchat/screens/chat_screen.dart';
 import 'package:flutter/material.dart';
 
-
 import 'package:flashchat/components/rounded_button.dart';
 import '../constants.dart';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
-
 
 class RegistrationScreen extends StatefulWidget {
   static String id = 'registration_screen';
@@ -34,11 +32,13 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Hero(
-                tag: 'logo',
-                child: Container(
-                  height: 200.0,
-                  child: Image.asset('images/logo.png'),
+              Flexible(
+                child: Hero(
+                  tag: 'logo',
+                  child: Container(
+                    height: 200.0,
+                    child: Image.asset('images/logo.png'),
+                  ),
                 ),
               ),
               SizedBox(
